@@ -7,18 +7,52 @@
   <style>
     :root{--bg:#0f0f12;--card:#121217;--accent:#ff7a59;--muted:#bdb6b6}
     body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,#08080a 0%, #14121a 100%);color:#eee}
-    header{padding:36px 24px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.03)}
+
+    /* Navigation Bar */
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      background:var(--card);
+      padding:12px 24px;
+      display:flex;
+      justify-content:center;
+      gap:32px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.7);
+      z-index:1000;
+    }
+    nav a{
+      color:#fff;
+      font-weight:bold;
+      text-decoration:none;
+      font-size:16px;
+      transition:color 0.2s;
+    }
+    nav a:hover{
+      color:var(--accent);
+    }
+
+    header{padding:100px 24px 36px 24px;text-align:center}
     header h1{margin:0;font-size:clamp(26px,4vw,38px);letter-spacing:-0.5px}
     header p{margin:6px 0 0;color:var(--muted)}
     .slogan{margin-top:18px;font-size:clamp(20px,3vw,28px);font-weight:700;color:var(--accent)}
+
     main{max-width:800px;margin:36px auto;padding:0 20px}
     .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:14px;box-shadow:0 6px 30px rgba(0,0,0,0.6)}
     h2{color:var(--accent);margin-top:0}
     p{line-height:1.6;color:#ddd}
-    a{color:var(--accent);text-decoration:none}
+    a{text-decoration:none}
   </style>
 </head>
 <body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ian.html">Ian</a>
+    <a href="greyson.html">Greyson</a>
+  </nav>
+
   <header>
     <h1>Greyson — The Chicken DJ</h1>
     <p>A glimpse into Greyson’s past, his struggles, and his life behind the music.</p>
@@ -44,7 +78,6 @@
     <section class="card" style="margin-top:22px">
       <h2>Reflections</h2>
       <p>The transformation into a chicken didn’t just change my body — it reflected everything I had carried: loss, loneliness, and resilience. I DJ not because I want fame, but because I must. The music is the only way to honor what I’ve lost, to channel grief into something that survives beyond me.</p>
-      <p><a href="index.html">Back to Main Page</a></p>
     </section>
   </main>
 </body>
